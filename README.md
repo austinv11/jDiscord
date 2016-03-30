@@ -5,23 +5,22 @@ This API thrives to be the best Discord API written in Java with features no oth
 [Download](#shut-up-and-take-my-money) with maven
 
 #Features
-- Guest support
-- Kicking and banning                  
-- Profile settings/account settings	
+- Kicking and banning
+- Profile settings/account settings
 - Group editing
 - Message building
 - Online statuses
-- Avatars + Roles 
+- Avatars + Roles
 - DMs
 - Group messaging
-- User talk (edited) event 
+- User talk (edited) event
 - User join/banned/kicked events
 - Invite joining
 - TTS
 - Permissions
 - History
 - Salt
-- Much more... 
+- Much more...
 
 
 #Events
@@ -38,13 +37,13 @@ This API thrives to be the best Discord API written in Java with features no oth
 - UserOnlineStatusChangedEvent
 - UserDeletedMessageEvent
 - MentionEvent (1.3)
-- Much more... 
+- Much more...
 
 
 
 #Creating a DiscordAPI instance
 
-In order to create the DiscordAPI instance, you'll need to use the DiscordBuilder class. 
+In order to create the DiscordAPI instance, you'll need to use the DiscordBuilder class.
 
 Examples:
 ```java
@@ -55,7 +54,7 @@ api.login();
 ```
 
 #Using the event manager
-In order to listen for an event, create a class that implements EventListener, and register it by calling `api.getEventManager().registerListener(new YourListener(api));`. All events can be found in the `me.itsghost.jdiscord.events` package as well as the [Events](#events) section. 
+In order to listen for an event, create a class that implements EventListener, and register it by calling `api.getEventManager().registerListener(new YourListener(api));`. All events can be found in the `me.itsghost.jdiscord.events` package as well as the [Events](#events) section.
 
 ```java
 public class ExampleListener implements EventListener {
@@ -85,7 +84,7 @@ public class Test {
     }
 }
 ```
-#Shut up and take my money! 
+#Shut up and take my money!
 ###(Now using shaded jar due to compatibility issues with past builds)
 [Maven](http://itsghost.me/maven)
 
@@ -111,6 +110,5 @@ Dependency:
 - [Apache Commons Lang 3](https://commons.apache.org/proper/commons-lang/)
 - [lombok](https://projectlombok.org/)
 - [JSON](http://www.json.org/java/)
-- [Java-Websocket](https://github.com/tootallnate/java-websocket)
 - http://itsghost.me/commons-codec-1.10.jar
 - [nv-websocket-client] (http://hastebin.com/ucucaqomip.xml)
